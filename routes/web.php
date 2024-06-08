@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name("home");
+
+
+Route::get('/uomini', function () {
+    return view('man');
+})->name("man");
+
+
+Route::get('/donne', function () {
+    return view('woman');
+})->name("woman");
+
+Route::get('/bambini', function () {
+    return view('kid');
+})->name("kid");
