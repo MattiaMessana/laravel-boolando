@@ -1,0 +1,12 @@
+.ms_card {
+    .back {
+        display: none;
+    }
+    &:hover .back {
+        display: block;
+    }
+
+    &:hover .front {
+        display: none;
+    }
+}
